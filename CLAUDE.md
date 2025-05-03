@@ -46,107 +46,107 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Tutorials
 
-- https://langchain-ai.github.io/langgraph/tutorials/introduction/
-- https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/
-- https://langchain-ai.github.io/langgraph/tutorials/workflows/
+- [Introduction](https://langchain-ai.github.io/langgraph/tutorials/introduction/)
+- [Local Server](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/)
+- [Workflows](https://langchain-ai.github.io/langgraph/tutorials/workflows/)
 
 ### Concepts
 
-- https://langchain-ai.github.io/langgraph/concepts/
-- https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/
-- https://langchain-ai.github.io/langgraph/concepts/application_structure/
-- https://langchain-ai.github.io/langgraph/concepts/assistants/
-- https://langchain-ai.github.io/langgraph/concepts/auth/
-- https://langchain-ai.github.io/langgraph/concepts/bring_your_own_cloud/
-- https://langchain-ai.github.io/langgraph/concepts/deployment_options/
-- https://langchain-ai.github.io/langgraph/concepts/double_texting/
-- https://langchain-ai.github.io/langgraph/concepts/durable_execution/
-- https://langchain-ai.github.io/langgraph/concepts/faq/
-- https://langchain-ai.github.io/langgraph/concepts/functional_api/
-- https://langchain-ai.github.io/langgraph/concepts/high_level/
-- https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/
-- https://langchain-ai.github.io/langgraph/concepts/langgraph_cli/
-- https://langchain-ai.github.io/langgraph/concepts/langgraph_cloud/
-- https://langchain-ai.github.io/langgraph/concepts/langgraph_platform/
-- https://langchain-ai.github.io/langgraph/concepts/langgraph_server/
-- https://langchain-ai.github.io/langgraph/concepts/langgraph_studio/
-- https://langchain-ai.github.io/langgraph/concepts/low_level/
-- https://langchain-ai.github.io/langgraph/concepts/memory/
-- https://langchain-ai.github.io/langgraph/concepts/multi_agent/
-- https://langchain-ai.github.io/langgraph/concepts/persistence/
-- https://langchain-ai.github.io/langgraph/concepts/plans/
-- https://langchain-ai.github.io/langgraph/concepts/platform_architecture/
-- https://langchain-ai.github.io/langgraph/concepts/pregel/
-- https://langchain-ai.github.io/langgraph/concepts/scalability_and_resilience/
-- https://langchain-ai.github.io/langgraph/concepts/sdk/
-- https://langchain-ai.github.io/langgraph/concepts/self_hosted/
-- https://langchain-ai.github.io/langgraph/concepts/streaming/
-- https://langchain-ai.github.io/langgraph/concepts/template_applications/
-- https://langchain-ai.github.io/langgraph/concepts/time-travel/
+- [Overview](https://langchain-ai.github.io/langgraph/concepts/)
+- [Agentic Concepts](https://langchain-ai.github.io/langgraph/concepts/agentic_concepts/)
+- [Application Structure](https://langchain-ai.github.io/langgraph/concepts/application_structure/)
+- [Assistants](https://langchain-ai.github.io/langgraph/concepts/assistants/)
+- [Authentication](https://langchain-ai.github.io/langgraph/concepts/auth/)
+- [Bring Your Own Cloud](https://langchain-ai.github.io/langgraph/concepts/bring_your_own_cloud/)
+- [Deployment Options](https://langchain-ai.github.io/langgraph/concepts/deployment_options/)
+- [Double Texting](https://langchain-ai.github.io/langgraph/concepts/double_texting/)
+- [Durable Execution](https://langchain-ai.github.io/langgraph/concepts/durable_execution/)
+- [FAQ](https://langchain-ai.github.io/langgraph/concepts/faq/)
+- [Functional API](https://langchain-ai.github.io/langgraph/concepts/functional_api/)
+- [High Level](https://langchain-ai.github.io/langgraph/concepts/high_level/)
+- [Human in the Loop](https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/)
+- [LangGraph CLI](https://langchain-ai.github.io/langgraph/concepts/langgraph_cli/)
+- [LangGraph Cloud](https://langchain-ai.github.io/langgraph/concepts/langgraph_cloud/)
+- [LangGraph Platform](https://langchain-ai.github.io/langgraph/concepts/langgraph_platform/)
+- [LangGraph Server](https://langchain-ai.github.io/langgraph/concepts/langgraph_server/)
+- [LangGraph Studio](https://langchain-ai.github.io/langgraph/concepts/langgraph_studio/)
+- [Low Level](https://langchain-ai.github.io/langgraph/concepts/low_level/)
+- [Memory](https://langchain-ai.github.io/langgraph/concepts/memory/)
+- [Multi Agent](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
+- [Persistence](https://langchain-ai.github.io/langgraph/concepts/persistence/)
+- [Plans](https://langchain-ai.github.io/langgraph/concepts/plans/)
+- [Platform Architecture](https://langchain-ai.github.io/langgraph/concepts/platform_architecture/)
+- [Pregel](https://langchain-ai.github.io/langgraph/concepts/pregel/)
+- [Scalability and Resilience](https://langchain-ai.github.io/langgraph/concepts/scalability_and_resilience/)
+- [SDK](https://langchain-ai.github.io/langgraph/concepts/sdk/)
+- [Self Hosted](https://langchain-ai.github.io/langgraph/concepts/self_hosted/)
+- [Streaming](https://langchain-ai.github.io/langgraph/concepts/streaming/)
+- [Template Applications](https://langchain-ai.github.io/langgraph/concepts/template_applications/)
+- [Time Travel](https://langchain-ai.github.io/langgraph/concepts/time-travel/)
 
 ### How-to Guides
 
-- https://langchain-ai.github.io/langgraph/how-tos/
-- https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/
-- https://langchain-ai.github.io/langgraph/how-tos/async/
-- https://langchain-ai.github.io/langgraph/how-tos/autogen-integration/
-- https://langchain-ai.github.io/langgraph/how-tos/autogen-integration-functional/
-- https://langchain-ai.github.io/langgraph/how-tos/branching/
-- https://langchain-ai.github.io/langgraph/how-tos/command
-- https://langchain-ai.github.io/langgraph/how-tos/configuration/
-- https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/
-- https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-hitl/
-- https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-memory/
-- https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-structured-output/
-- https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-system-prompt/
-- https://langchain-ai.github.io/langgraph/how-tos/cross-thread-persistence
-- https://langchain-ai.github.io/langgraph/how-tos/cross-thread-persistence-functional
-- https://langchain-ai.github.io/langgraph/how-tos/deploy-self-hosted/
-- https://langchain-ai.github.io/langgraph/how-tos/disable-streaming/
-- https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/edit-graph-state/
-- https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/review-tool-calls/
-- https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/time-travel/
-- https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/wait-user-input/
-- https://langchain-ai.github.io/langgraph/how-tos/input_output_schema/
-- https://langchain-ai.github.io/langgraph/how-tos/many-tools/
-- https://langchain-ai.github.io/langgraph/how-tos/map-reduce/
-- https://langchain-ai.github.io/langgraph/how-tos/memory/add-summary-conversation-history/
-- https://langchain-ai.github.io/langgraph/how-tos/memory/delete-messages
-- https://langchain-ai.github.io/langgraph/how-tos/memory/manage-conversation-history/
-- https://langchain-ai.github.io/langgraph/how-tos/memory/semantic-search/
-- https://langchain-ai.github.io/langgraph/how-tos/multi-agent-multi-turn-convo/
-- https://langchain-ai.github.io/langgraph/how-tos/multi-agent-multi-turn-convo-functional/
-- https://langchain-ai.github.io/langgraph/how-tos/multi-agent-network/
-- https://langchain-ai.github.io/langgraph/how-tos/multi-agent-network-functional/
-- https://langchain-ai.github.io/langgraph/how-tos/node-retries/
-- https://langchain-ai.github.io/langgraph/how-tos/pass-config-to-tools/
-- https://langchain-ai.github.io/langgraph/how-tos/pass_private_state/
-- https://langchain-ai.github.io/langgraph/how-tos/persistence/
-- https://langchain-ai.github.io/langgraph/how-tos/persistence-functional/
-- https://langchain-ai.github.io/langgraph/how-tos/persistence_mongodb/
-- https://langchain-ai.github.io/langgraph/how-tos/persistence_postgres/
-- https://langchain-ai.github.io/langgraph/how-tos/persistence_redis/
-- https://langchain-ai.github.io/langgraph/how-tos/react-agent-from-scratch/
-- https://langchain-ai.github.io/langgraph/how-tos/react-agent-from-scratch-functional
-- https://langchain-ai.github.io/langgraph/how-tos/react-agent-structured-output
-- https://langchain-ai.github.io/langgraph/how-tos/recursion-limit/
-- https://langchain-ai.github.io/langgraph/how-tos/review-tool-calls-functional/
-- https://langchain-ai.github.io/langgraph/how-tos/run-id-langsmith/
-- https://langchain-ai.github.io/langgraph/how-tos/sequence/
-- https://langchain-ai.github.io/langgraph/how-tos/state-model
-- https://langchain-ai.github.io/langgraph/how-tos/state-reducers/
-- https://langchain-ai.github.io/langgraph/how-tos/streaming/
-- https://langchain-ai.github.io/langgraph/how-tos/streaming-events-from-within-tools/
-- https://langchain-ai.github.io/langgraph/how-tos/streaming-specific-nodes/
-- https://langchain-ai.github.io/langgraph/how-tos/streaming-subgraphs/
-- https://langchain-ai.github.io/langgraph/how-tos/streaming-tokens
-- https://langchain-ai.github.io/langgraph/how-tos/subgraph/
-- https://langchain-ai.github.io/langgraph/how-tos/subgraph-persistence/
-- https://langchain-ai.github.io/langgraph/how-tos/subgraph-transform-state/
-- https://langchain-ai.github.io/langgraph/how-tos/subgraphs-manage-state/
-- https://langchain-ai.github.io/langgraph/how-tos/tool-calling/
-- https://langchain-ai.github.io/langgraph/how-tos/tool-calling-errors/
-- https://langchain-ai.github.io/langgraph/how-tos/update-state-from-tools/
-- https://langchain-ai.github.io/langgraph/how-tos/use-remote-graph/
-- https://langchain-ai.github.io/langgraph/how-tos/visualization
-- https://langchain-ai.github.io/langgraph/how-tos/wait-user-input-functional/
+- [Overview](https://langchain-ai.github.io/langgraph/how-tos/)
+- [Agent Handoffs](https://langchain-ai.github.io/langgraph/how-tos/agent-handoffs/)
+- [Async](https://langchain-ai.github.io/langgraph/how-tos/async/)
+- [AutoGen Integration](https://langchain-ai.github.io/langgraph/how-tos/autogen-integration/)
+- [AutoGen Integration Functional](https://langchain-ai.github.io/langgraph/how-tos/autogen-integration-functional/)
+- [Branching](https://langchain-ai.github.io/langgraph/how-tos/branching/)
+- [Command](https://langchain-ai.github.io/langgraph/how-tos/command)
+- [Configuration](https://langchain-ai.github.io/langgraph/how-tos/configuration/)
+- [Create React Agent](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/)
+- [Create React Agent HITL](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-hitl/)
+- [Create React Agent Memory](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-memory/)
+- [Create React Agent Structured Output](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-structured-output/)
+- [Create React Agent System Prompt](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent-system-prompt/)
+- [Cross Thread Persistence](https://langchain-ai.github.io/langgraph/how-tos/cross-thread-persistence)
+- [Cross Thread Persistence Functional](https://langchain-ai.github.io/langgraph/how-tos/cross-thread-persistence-functional)
+- [Deploy Self Hosted](https://langchain-ai.github.io/langgraph/how-tos/deploy-self-hosted/)
+- [Disable Streaming](https://langchain-ai.github.io/langgraph/how-tos/disable-streaming/)
+- [Edit Graph State](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/edit-graph-state/)
+- [Review Tool Calls](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/review-tool-calls/)
+- [Time Travel](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/time-travel/)
+- [Wait User Input](https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/wait-user-input/)
+- [Input Output Schema](https://langchain-ai.github.io/langgraph/how-tos/input_output_schema/)
+- [Many Tools](https://langchain-ai.github.io/langgraph/how-tos/many-tools/)
+- [Map Reduce](https://langchain-ai.github.io/langgraph/how-tos/map-reduce/)
+- [Add Summary Conversation History](https://langchain-ai.github.io/langgraph/how-tos/memory/add-summary-conversation-history/)
+- [Delete Messages](https://langchain-ai.github.io/langgraph/how-tos/memory/delete-messages)
+- [Manage Conversation History](https://langchain-ai.github.io/langgraph/how-tos/memory/manage-conversation-history/)
+- [Semantic Search](https://langchain-ai.github.io/langgraph/how-tos/memory/semantic-search/)
+- [Multi Agent Multi Turn Conversation](https://langchain-ai.github.io/langgraph/how-tos/multi-agent-multi-turn-convo/)
+- [Multi Agent Multi Turn Conversation Functional](https://langchain-ai.github.io/langgraph/how-tos/multi-agent-multi-turn-convo-functional/)
+- [Multi Agent Network](https://langchain-ai.github.io/langgraph/how-tos/multi-agent-network/)
+- [Multi Agent Network Functional](https://langchain-ai.github.io/langgraph/how-tos/multi-agent-network-functional/)
+- [Node Retries](https://langchain-ai.github.io/langgraph/how-tos/node-retries/)
+- [Pass Config to Tools](https://langchain-ai.github.io/langgraph/how-tos/pass-config-to-tools/)
+- [Pass Private State](https://langchain-ai.github.io/langgraph/how-tos/pass_private_state/)
+- [Persistence](https://langchain-ai.github.io/langgraph/how-tos/persistence/)
+- [Persistence Functional](https://langchain-ai.github.io/langgraph/how-tos/persistence-functional/)
+- [Persistence MongoDB](https://langchain-ai.github.io/langgraph/how-tos/persistence_mongodb/)
+- [Persistence Postgres](https://langchain-ai.github.io/langgraph/how-tos/persistence_postgres/)
+- [Persistence Redis](https://langchain-ai.github.io/langgraph/how-tos/persistence_redis/)
+- [React Agent From Scratch](https://langchain-ai.github.io/langgraph/how-tos/react-agent-from-scratch/)
+- [React Agent From Scratch Functional](https://langchain-ai.github.io/langgraph/how-tos/react-agent-from-scratch-functional)
+- [React Agent Structured Output](https://langchain-ai.github.io/langgraph/how-tos/react-agent-structured-output)
+- [Recursion Limit](https://langchain-ai.github.io/langgraph/how-tos/recursion-limit/)
+- [Review Tool Calls Functional](https://langchain-ai.github.io/langgraph/how-tos/review-tool-calls-functional/)
+- [Run ID LangSmith](https://langchain-ai.github.io/langgraph/how-tos/run-id-langsmith/)
+- [Sequence](https://langchain-ai.github.io/langgraph/how-tos/sequence/)
+- [State Model](https://langchain-ai.github.io/langgraph/how-tos/state-model)
+- [State Reducers](https://langchain-ai.github.io/langgraph/how-tos/state-reducers/)
+- [Streaming](https://langchain-ai.github.io/langgraph/how-tos/streaming/)
+- [Streaming Events From Within Tools](https://langchain-ai.github.io/langgraph/how-tos/streaming-events-from-within-tools/)
+- [Streaming Specific Nodes](https://langchain-ai.github.io/langgraph/how-tos/streaming-specific-nodes/)
+- [Streaming Subgraphs](https://langchain-ai.github.io/langgraph/how-tos/streaming-subgraphs/)
+- [Streaming Tokens](https://langchain-ai.github.io/langgraph/how-tos/streaming-tokens)
+- [Subgraph](https://langchain-ai.github.io/langgraph/how-tos/subgraph/)
+- [Subgraph Persistence](https://langchain-ai.github.io/langgraph/how-tos/subgraph-persistence/)
+- [Subgraph Transform State](https://langchain-ai.github.io/langgraph/how-tos/subgraph-transform-state/)
+- [Subgraphs Manage State](https://langchain-ai.github.io/langgraph/how-tos/subgraphs-manage-state/)
+- [Tool Calling](https://langchain-ai.github.io/langgraph/how-tos/tool-calling/)
+- [Tool Calling Errors](https://langchain-ai.github.io/langgraph/how-tos/tool-calling-errors/)
+- [Update State From Tools](https://langchain-ai.github.io/langgraph/how-tos/update-state-from-tools/)
+- [Use Remote Graph](https://langchain-ai.github.io/langgraph/how-tos/use-remote-graph/)
+- [Visualization](https://langchain-ai.github.io/langgraph/how-tos/visualization)
+- [Wait User Input Functional](https://langchain-ai.github.io/langgraph/how-tos/wait-user-input-functional/)
