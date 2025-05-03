@@ -67,11 +67,15 @@ def main():
 
         es_table.add_row("Host", settings.elasticsearch.host)
         es_table.add_row("Indices", ", ".join(settings.elasticsearch.index_names))
-        
+
         # Check for API key (existence only, not its value)
-        api_key_status = "[green]Configured[/green]" if os.environ.get("ES_API_KEY") else "[red]Not configured[/red]"
+        api_key_status = (
+            "[green]Configured[/green]"
+            if os.environ.get("ES_API_KEY")
+            else "[red]Not configured[/red]"
+        )
         es_table.add_row("API Key", api_key_status)
-        
+
         console.print(es_table)
         console.print()
 
@@ -88,20 +92,28 @@ def main():
         service_table.add_row("RRF K Factor", str(settings.service.rrf_k_factor))
         console.print(service_table)
         console.print()
-        
+
         # Test Elasticsearch connection
         try:
             es_client = get_elasticsearch_client()
             if es_client and es_client.ping():
-                console.print("[bold green]Elasticsearch Connection:[/bold green] Successfully connected!")
+                console.print(
+                    "[bold green]Elasticsearch Connection:[/bold green] Successfully connected!"
+                )
                 # Get cluster info without showing sensitive data
                 info = es_client.info()
                 console.print(f"Cluster Name: {info.get('cluster_name', 'N/A')}")
-                console.print(f"Elasticsearch Version: {info.get('version', {}).get('number', 'N/A')}")
+                console.print(
+                    f"Elasticsearch Version: {info.get('version', {}).get('number', 'N/A')}"
+                )
             else:
-                console.print("[bold yellow]Elasticsearch Connection:[/bold yellow] Not connected")
+                console.print(
+                    "[bold yellow]Elasticsearch Connection:[/bold yellow] Not connected"
+                )
         except Exception as e:
-            console.print(f"[bold red]Elasticsearch Connection Error:[/bold red] {str(e)}")
+            console.print(
+                f"[bold red]Elasticsearch Connection Error:[/bold red] {str(e)}"
+            )
 
         console.print("[bold green]Configuration validated successfully![/bold green]")
         return 0
