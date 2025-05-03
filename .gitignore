@@ -184,3 +184,4 @@ temp/
 .langgraph/
 chainlit.md
 .chainlit/
+**/.claude/settings.local.json
