@@ -182,6 +182,7 @@ temp/
 
 # LangGraph
 .langgraph/
+.langgraph_*/
 chainlit.md
 .chainlit/
 **/.claude/settings.local.json

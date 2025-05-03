@@ -4,12 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Build/Test Commands
 
-- Install dependencies: `pip install -e .`
-- Install dev dependencies: `pip install -e ".[lint]"`
-- Run linting: `ruff check .`
-- Format code: `black .`
-- Run a Python script: `python hello.py`
-- Run Chainlit server: `chainlit run hello.py`
+- Install dependencies: `uv run pip install -e .`
+- Install dev dependencies: `uv run pip install -e ".[lint]"`
+- Run linting: `uv run ruff check .`
+- Format code: `uv run black .`
+- Run a Python script: `uv run python hello.py`
+- Run tests: `uv run pytest tests/`
+
+## Project Guidelines
+
+1. We will exclusively use LangGraph for development
+2. We need a clear directory structure
+3. Use `uv run` for all Python commands
 
 ## Code Style Guidelines
 
@@ -31,6 +37,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   - Use @task for LangGraph tasks
   - Use @entrypoint for LangGraph entry points
   - Follow functional API patterns for complex workflows
+- **Directory Structure**:
+  - Use app/ folder for application code, settings and configuration
+  - Use tests/ folder for Pytest test files
+  - Organize code into logical modules
 
 ## LangGraph Documentation URLs
 

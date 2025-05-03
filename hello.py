@@ -1,102 +1,51 @@
-from langchain_core.tools import tool
-from langchain_openai import ChatOpenAI
-from langgraph.graph import add_messages
-from langchain_core.messages import (
-    SystemMessage,
-    HumanMessage,
-    BaseMessage,
-    ToolCall,
-)
+import time
+import uuid
+
 from langgraph.func import entrypoint, task
-from dotenv import load_dotenv
-
-load_dotenv()
-
-llm = ChatOpenAI(model="gpt-4o-mini")
-
-
-# Define tools
-@tool
-def multiply(a: int, b: int) -> int:
-    """Multiply a and b.
-
-    Args:
-        a: first int
-        b: second int
-    """
-    return a * b
-
-
-@tool
-def add(a: int, b: int) -> int:
-    """Adds a and b.
-
-    Args:
-        a: first int
-        b: second int
-    """
-    return a + b
-
-
-@tool
-def divide(a: int, b: int) -> float:
-    """Divide a and b.
-
-    Args:
-        a: first int
-        b: second int
-    """
-    return a / b
-
-
-# Augment the LLM with tools
-tools = [add, multiply, divide]
-tools_by_name = {tool.name: tool for tool in tools}
-llm_with_tools = llm.bind_tools(tools)
+from langgraph.types import interrupt
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.types import Command
 
 
 @task
-def call_llm(messages: list[BaseMessage]):
-    """LLM decides whether to call a tool or not"""
-    return llm_with_tools.invoke(
-        [
-            SystemMessage(
-                content="You are a helpful assistant tasked with performing arithmetic on a set of inputs."
-            )
-        ]
-        + messages
+def write_essay(topic: str) -> str:
+    """Write an essay about the given topic."""
+    time.sleep(1)  # This is a placeholder for a long-running task.
+    return f"An essay about topic: {topic}"
+
+
+@entrypoint(checkpointer=MemorySaver())
+def workflow(topic: str) -> dict:
+    """A simple workflow that writes an essay and asks for a review."""
+    essay = write_essay("cat").result()
+    is_approved = interrupt(
+        {
+            # Any json-serializable payload provided to interrupt as argument.
+            # It will be surfaced on the client side as an Interrupt when streaming data
+            # from the workflow.
+            "essay": essay,  # The essay we want reviewed.
+            # We can add any additional information that we need.
+            # For example, introduce a key called "action" with some instructions.
+            "action": "Please approve/reject the essay",
+        }
     )
 
-
-@task
-def call_tool(tool_call: ToolCall):
-    """Performs the tool call"""
-    tool = tools_by_name[tool_call["name"]]
-    return tool.invoke(tool_call)
+    return {
+        "essay": essay,  # The essay that was generated
+        "is_approved": is_approved,  # Response from HIL
+    }
 
 
-@entrypoint()
-def agent(messages: list[BaseMessage]):
-    llm_response = call_llm(messages).result()
+thread_id = str(uuid.uuid4())
 
-    while True:
-        if not llm_response.tool_calls:
-            break
+config = {"configurable": {"thread_id": thread_id}}
 
-        # Execute tools
-        tool_result_futures = [
-            call_tool(tool_call) for tool_call in llm_response.tool_calls
-        ]
-        tool_results = [fut.result() for fut in tool_result_futures]
-        messages = add_messages(messages, [llm_response, *tool_results])
-        llm_response = call_llm(messages).result()
-
-    messages = add_messages(messages, llm_response)
-    return messages
+for item in workflow.stream("cat", config):
+    print(item)
 
 
-# Invoke
-messages = [HumanMessage(content="Add 3 and 4 and then multiple the result by 7")]
-for chunk in agent.stream(messages, stream_mode="updates"):
-    print(chunk)
-    print("\n")
+human_review = True
+time.sleep(10)
+
+for item in workflow.stream(Command(resume=human_review), config):
+    print(item)
