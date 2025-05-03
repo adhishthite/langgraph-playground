@@ -179,3 +179,6 @@ repomix*
 .repomix*
 temp/
 .DS_Store
+
+# LangGraph
+.langgraph/
