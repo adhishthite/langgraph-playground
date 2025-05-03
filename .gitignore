@@ -182,3 +182,5 @@ temp/
 
 # LangGraph
 .langgraph/
+chainlit.md
+.chainlit/
