@@ -16,6 +16,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 1. We will exclusively use LangGraph for development
 2. We need a clear directory structure
 3. Use `uv run` for all Python commands
+4. After completion of tasks defined in the @documentation/ folder, create a 001-T-IMPL-*.md to put down the entire process that you followed for the task, Autoincrement based on the task name!
 
 ## Code Style Guidelines
 
